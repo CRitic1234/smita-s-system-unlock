@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Love Letter Theme Colors
+        "terminal-green": "hsl(var(--terminal-green))",
+        "love-cream": "hsl(var(--love-cream))",
+        "love-charcoal": "hsl(var(--love-charcoal))",
+        "love-rose": "hsl(var(--love-rose))",
+        "love-blush": "hsl(var(--love-blush))",
+        "love-gold": "hsl(var(--love-gold))",
+      },
+      fontFamily: {
+        mono: ["VT323", "Courier New", "monospace"],
+        playfair: ["Playfair Display", "Georgia", "serif"],
+        lora: ["Lora", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +92,15 @@ export default {
             height: "0",
           },
         },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        blink: "blink 1s step-end infinite",
       },
     },
   },
